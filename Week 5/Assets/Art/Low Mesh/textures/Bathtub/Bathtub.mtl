@@ -1,0 +1,16 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 14.11.2014 11:58:19
+
+newmtl Tex_0424_0_dds
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka D:\Games\Bloody Good Time\Bloody Good Time\_Ripper\14.11.2014_10.48.01\Frames\Frame0000\Tex_0424_0.dds
+	map_Kd D:\Games\Bloody Good Time\Bloody Good Time\_Ripper\14.11.2014_10.48.01\Frames\Frame0000\Tex_0424_0.dds
