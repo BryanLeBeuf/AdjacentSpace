@@ -1,0 +1,12 @@
+[LOG]: [FFmpegLib]: DEST URL: /Users/Chelsea/RockVR/Video/2018-05-27-21-19-51-EXVZ1.mp4
+[LOG]: [FFmpegLib]: Build command: "/Users/Chelsea/Desktop/Week 5/Assets/StreamingAssets/RockVR/FFmpeg/Windows/ffmpeg.exe" -f rawvideo -pix_fmt rgb24 -r 30 -s 1280x720 -i - -y -preset ultrafast -pix_fmt yuv420p -vcodec libx264 -crf 18 -vf vflip -framerate 30 -tune zerolatency "/Users/Chelsea/RockVR/Video/2018-05-27-21-19-51-EXVZ1.mp4"
+[LOG]: [FFmpegLib]: DEST URL: /Users/Chelsea/RockVR/Video/2018-05-27-21-19-51-XFCZ6.wav
+[LOG]: [FFmpegLib]: Build command: "/Users/Chelsea/Desktop/Week 5/Assets/StreamingAssets/RockVR/FFmpeg/Windows/ffmpeg.exe" -f f32le -ar 48000 -ac 2 -i - -y -preset ultrafast -tune zerolatency "/Users/Chelsea/RockVR/Video/2018-05-27-21-19-51-XFCZ6.wav"
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
+[LOG]: [FFmpegLib]: DEST URL: /Users/Chelsea/RockVR/Video/2018-05-27-21-24-54-ZTH3S.mp4
+[LOG]: [FFmpegLib]: Build command: "/Users/Chelsea/Desktop/Week 5/Assets/StreamingAssets/RockVR/FFmpeg/Windows/ffmpeg.exe" -f rawvideo -pix_fmt rgb24 -r 30 -s 1280x720 -i - -y -preset ultrafast -pix_fmt yuv420p -vcodec libx264 -crf 18 -vf vflip -framerate 30 -tune zerolatency "/Users/Chelsea/RockVR/Video/2018-05-27-21-24-54-ZTH3S.mp4"
+[LOG]: [FFmpegLib]: DEST URL: /Users/Chelsea/RockVR/Video/2018-05-27-21-24-54-IAY3X.wav
+[LOG]: [FFmpegLib]: Build command: "/Users/Chelsea/Desktop/Week 5/Assets/StreamingAssets/RockVR/FFmpeg/Windows/ffmpeg.exe" -f f32le -ar 48000 -ac 2 -i - -y -preset ultrafast -tune zerolatency "/Users/Chelsea/RockVR/Video/2018-05-27-21-24-54-IAY3X.wav"
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
