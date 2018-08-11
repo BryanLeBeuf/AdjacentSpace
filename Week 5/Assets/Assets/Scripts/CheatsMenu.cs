@@ -43,4 +43,8 @@ public class CheatsMenu : MonoBehaviour {
 		GameManager.Instance.ShowGameMainMenu(true);
 		GameManager.Instance.SetCheatsMenuActive(false);
 	}
+
+	public void ToggleFastRun(){
+		GameManager.Instance.FastRun = !GameManager.Instance.FastRun;
+	}
 }

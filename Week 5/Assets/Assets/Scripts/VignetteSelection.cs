@@ -24,7 +24,7 @@ public class VignetteSelection : MonoBehaviour {
 	}
 
 	public void OnClick(){
-		m_MemoriesMenu.OnClicked(m_VignetteId);
+		m_MemoriesMenu.OnClicked(m_VignetteId, this);
 	}
 
 	public void UpdateLockedState(){

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MemoriesMenu : MonoBehaviour {
 
@@ -13,6 +14,8 @@ public class MemoriesMenu : MonoBehaviour {
 	[SerializeField]
 	MemoriesMap m_Map;
 
+	private VignetteSelection m_PreviouslySelected;
+
 	private List<VignetteSelection> m_Vignettes = new List<VignetteSelection>();
 
 	void Start(){
@@ -21,6 +24,11 @@ public class MemoriesMenu : MonoBehaviour {
 
 		List<string> vignetteIds = GameManager.Instance.AllVignetteIds();
 		foreach(string id in vignetteIds){
+			VignetteConfig? config = GameManager.Instance.GetVignetteConfig(id);
+			if(config == null || ((VignetteConfig)config).HideInList){
+				continue;
+			}
+
 			VignetteSelection entry = (VignetteSelection) Instantiate(m_Prefab);
 			entry.transform.SetParent(VignetteSelectionContainer.transform);
 			entry.transform.localScale = Vector3.one;
@@ -33,7 +41,13 @@ public class MemoriesMenu : MonoBehaviour {
 
 	void OnEnable(){
 		UpdateVignettes();
-		m_Map.SetMapLocation(null);
+
+		m_Map.SetMapLocation(GameManager.Instance.DefaultMapConfig);
+
+		if(m_PreviouslySelected != null){
+			m_PreviouslySelected.GetComponentInChildren<Button>().interactable = true;
+			m_PreviouslySelected = null;
+		}
 	}
 
 	private void UpdateVignettes(){
@@ -42,7 +56,15 @@ public class MemoriesMenu : MonoBehaviour {
 		}
 	}
 
-	public void OnClicked(string id){
+	public void OnClicked(string id, VignetteSelection selectedVignette){
 		m_Map.SetMapLocation(id);
+
+		if(m_PreviouslySelected != null){
+			m_PreviouslySelected.GetComponentInChildren<Button>().interactable = true;
+			m_PreviouslySelected = null;
+		}
+
+		m_PreviouslySelected = selectedVignette;
+		m_PreviouslySelected.GetComponentInChildren<Button>().interactable = false;
 	}
 }

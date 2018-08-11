@@ -333,7 +333,14 @@ public class VignetteOverlay : MonoBehaviour {
 	}
 
 	private void UnPauseAllPreviouslyPlayingAudioSources(){
+		if(m_PreviouslyPlayingAudioSources==null){
+			return;
+		}
+
 		foreach(AudioSource source in m_PreviouslyPlayingAudioSources){
+			if(source==null){
+				continue;
+			}
 			source.UnPause();
 		}
 	}

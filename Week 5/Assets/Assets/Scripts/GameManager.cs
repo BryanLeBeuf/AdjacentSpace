@@ -25,6 +25,11 @@ public class GameManager : GameSingleton<GameManager> {
 
 	[HideInInspector]
 	public bool GameplayScene = false;
+	[HideInInspector]
+	public string DefaultMapConfig = null;
+	[HideInInspector]
+	public bool FastRun = false;
+
 
 	HashSet<Camera> m_ActiveCameras = new HashSet<Camera>();
 	HashSet<Menu> m_AllSubMenus = new HashSet<Menu>();
@@ -165,7 +170,10 @@ public class GameManager : GameSingleton<GameManager> {
 		return m_VignetteIds;
 	}
 
-	public VignetteConfig GetVignetteConfig(string id){
+	public VignetteConfig? GetVignetteConfig(string id){
+		if(!m_Vignettes.ContainsKey(id)){
+			return null;
+		}
 		return m_Vignettes[id];
 	}
 
@@ -270,6 +278,7 @@ public struct VignetteConfig
 {
 	public string Name;
 	public Texture MapImage;
+	public bool HideInList;
 }
 
 [Serializable]

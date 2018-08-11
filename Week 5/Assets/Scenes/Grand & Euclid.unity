@@ -9769,6 +9769,11 @@ Prefab:
       propertyPath: m_GameplayScene
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114474262163588790, guid: 637fb7761a4e6479da070fe1097573de,
+        type: 2}
+      propertyPath: m_DefaultMapConfig
+      value: Intro
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
   m_IsPrefabParent: 0

@@ -2863,12 +2863,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1743307254136524, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
       propertyPath: m_Name
-      value: GameManagerInitializer (1)
+      value: GameManagerInitializer
       objectReference: {fileID: 0}
     - target: {fileID: 114474262163588790, guid: 637fb7761a4e6479da070fe1097573de,
         type: 2}
       propertyPath: m_GameplayScene
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474262163588790, guid: 637fb7761a4e6479da070fe1097573de,
+        type: 2}
+      propertyPath: m_DefaultMapConfig
+      value: Ivanhoe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 637fb7761a4e6479da070fe1097573de, type: 2}

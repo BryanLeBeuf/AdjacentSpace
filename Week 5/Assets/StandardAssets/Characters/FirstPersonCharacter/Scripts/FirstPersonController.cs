@@ -98,6 +98,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void PlayLandingSound()
         {
+            if(m_LandSound == null){
+                return;
+            }
+            if(!m_AudioSource.enabled){
+                return;
+            }
+
             m_AudioSource.clip = m_LandSound;
             m_AudioSource.Play();
             m_NextStep = m_StepCycle + .5f;
@@ -153,6 +160,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void PlayJumpSound()
         {
+            if(m_JumpSound==null){
+                return;
+            }
+            if(!m_AudioSource.enabled){
+                return;
+            }
+
             m_AudioSource.clip = m_JumpSound;
             m_AudioSource.Play();
         }
@@ -183,10 +197,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 return;
             }
+            if(!m_AudioSource.enabled){
+                return;
+            }
             // pick & play a random footstep sound from the array,
             // excluding sound at index 0
             int n = Random.Range(1, m_FootstepSounds.Length);
+
+            if(m_FootstepSounds == null || m_FootstepSounds[n] == null){
+                return;
+            }
+
             m_AudioSource.clip = m_FootstepSounds[n];
+            if(m_AudioSource == null || m_AudioSource.clip == null){
+                return;
+            }
             m_AudioSource.PlayOneShot(m_AudioSource.clip);
             // move picked sound to index 0 so it's not picked next time
             m_FootstepSounds[n] = m_FootstepSounds[0];
@@ -233,6 +258,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 #endif
             // set the desired speed to be walking or running
             speed = m_IsWalking ? m_WalkSpeed : m_RunSpeed;
+
+            if(GameManager.Instance.FastRun){
+                speed = speed * 3;
+            }
+            
             m_Input = new Vector2(horizontal, vertical);
 
             // normalize input if it exceeds 1 in combined length:

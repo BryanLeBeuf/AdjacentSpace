@@ -29,7 +29,10 @@ public class MemoriesMap : MonoBehaviour {
 
 	public void SetMapLocation(string vignettedId){
 		if(vignettedId!=null){
-			m_MapOverlayImage.texture = GameManager.Instance.GetVignetteConfig(vignettedId).MapImage;
+			VignetteConfig? config = GameManager.Instance.GetVignetteConfig(vignettedId);
+			if(config!=null){
+				m_MapOverlayImage.texture = ((VignetteConfig)config).MapImage;
+			}
 		}
 
 		m_CurrentVignetteId = vignettedId;

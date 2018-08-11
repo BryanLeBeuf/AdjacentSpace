@@ -7,6 +7,8 @@ public class GameManagerInitializer : MonoBehaviour {
 
 	[SerializeField]
 	bool m_GameplayScene = false;
+	[SerializeField]
+	string m_DefaultMapConfig = "";
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +19,7 @@ public class GameManagerInitializer : MonoBehaviour {
 		}else{
 			GameManager.Instance.NotifySceneLoaded();
 			GameManager.Instance.GameplayScene = m_GameplayScene;
+			GameManager.Instance.DefaultMapConfig = m_DefaultMapConfig;
 		}
 	}
 
@@ -25,5 +28,6 @@ public class GameManagerInitializer : MonoBehaviour {
 			yield return null;
 		}
 		GameManager.Instance.GameplayScene = m_GameplayScene;
+		GameManager.Instance.DefaultMapConfig = m_DefaultMapConfig;
 	}
 }

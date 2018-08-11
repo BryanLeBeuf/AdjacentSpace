@@ -6045,7 +6045,7 @@ MonoBehaviour:
       move: 0
     LoopAudioForDuration: 0
     expanded: 1
-    lastCalculatedHeight: 178
+    lastCalculatedHeight: 70
     useSmartSubs: 0
   OnFailure: 0
   OnSuccess: 0
@@ -8516,6 +8516,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1313416847}
   m_Mesh: {fileID: 4300012, guid: 150a8077f322141f8970aaf9510d4f48, type: 3}
+--- !u!1001 &1321108180
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4605556029502430, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.1776776
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605556029502430, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.6573677
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605556029502430, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.7203884
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605556029502430, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605556029502430, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605556029502430, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605556029502430, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605556029502430, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474262163588790, guid: 637fb7761a4e6479da070fe1097573de,
+        type: 2}
+      propertyPath: m_DefaultMapConfig
+      value: Grayfield
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743307254136524, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+      propertyPath: m_Name
+      value: GameManagerInitializer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474262163588790, guid: 637fb7761a4e6479da070fe1097573de,
+        type: 2}
+      propertyPath: m_GameplayScene
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 637fb7761a4e6479da070fe1097573de, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1325573294
 GameObject:
   m_ObjectHideFlags: 0
