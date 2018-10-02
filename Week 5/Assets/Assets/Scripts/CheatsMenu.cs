@@ -47,4 +47,9 @@ public class CheatsMenu : MonoBehaviour {
 	public void ToggleFastRun(){
 		GameManager.Instance.FastRun = !GameManager.Instance.FastRun;
 	}
+
+	public void SkipToIvanhoe(){	
+		Application.LoadLevel("Ply_test");
+		GameManager.Instance.SetCheatsMenuActive(false);
+	}
 }

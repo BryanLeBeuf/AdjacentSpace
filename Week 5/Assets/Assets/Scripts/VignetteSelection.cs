@@ -32,7 +32,8 @@ public class VignetteSelection : MonoBehaviour {
 		
 		m_Button.enabled = discovered;
 		if(discovered){
-			m_TextField.text = m_VignetteId;
+			VignetteVideoConfig videoConfig = VignetteAuthoring.Instance.GetVideoConfig(m_VignetteId);
+			m_TextField.text = videoConfig.DisplayName;
 		}else{
 			m_TextField.text = m_EmptyString;
 		}

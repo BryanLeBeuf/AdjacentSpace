@@ -16,10 +16,15 @@ public class VignetteAuthoring : GameSingleton<VignetteAuthoring> {
 				config.InitialMusicVolume = config.AudioSourceToPlay.volume;
 			}
 
-			if(String.IsNullOrEmpty(config.Name)){
+			config.UniqueId = vigConfig.gameObject.name;
+
+			if(m_ConfigurationsById.ContainsKey(config.UniqueId)){
+				Debug.LogError("Cannot have two vignette configurations with the same name: " + config.UniqueId);
+			}
+			if(String.IsNullOrEmpty(config.UniqueId)){
 				continue;
 			}
-			m_ConfigurationsById[config.Name] = config;
+			m_ConfigurationsById[config.UniqueId] = config;
 
 		}
 	}
@@ -31,7 +36,9 @@ public class VignetteAuthoring : GameSingleton<VignetteAuthoring> {
 
 [Serializable]
 public struct VignetteVideoConfig {
-	public string Name;
+	[HideInInspector]
+	public string UniqueId;
+	public string DisplayName;
 	public VignetteVideoStepConfig[] IndividualSteps;
 	public Vector2 TextOffset;
 	public float TextBoxWidth;

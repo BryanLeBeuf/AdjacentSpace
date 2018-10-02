@@ -172,7 +172,7 @@ public class VignetteOverlay : MonoBehaviour {
 					if(m_FinishedAction!=null){
 						m_FinishedAction();
 					}
-					GameManager.Instance.SetVignetteFound(m_Config.Name);
+					GameManager.Instance.SetVignetteFound(m_Config.UniqueId);
 					GameManager.Instance.HideVignette();
 					UnPauseAllPreviouslyPlayingAudioSources();
 				}
@@ -256,7 +256,7 @@ public class VignetteOverlay : MonoBehaviour {
 		}
 
 		// if we've seen this vignette already, we can advance.
-		if(GameManager.Instance.HasSeenVignette(m_Config.Name)){
+		if(GameManager.Instance.HasSeenVignette(m_Config.UniqueId)){
 			return true;
 		}
 
@@ -295,7 +295,7 @@ public class VignetteOverlay : MonoBehaviour {
 		}
 
 		// if we've seen this vignette already, we can advance.
-		if(GameManager.Instance.HasSeenVignette(m_Config.Name)){
+		if(GameManager.Instance.HasSeenVignette(m_Config.UniqueId)){
 			return true;
 		}
 
