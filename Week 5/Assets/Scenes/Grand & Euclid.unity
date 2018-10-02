@@ -9820,7 +9820,7 @@ MonoBehaviour:
       move: 0
     LoopAudioForDuration: 0
     expanded: 1
-    lastCalculatedHeight: 178
+    lastCalculatedHeight: 70
     useSmartSubs: 0
   OnFailure: 0
   OnSuccess: 0

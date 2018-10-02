@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Narrate;
 
 public class InteractionSensor : MonoBehaviour {
 
 	[SerializeField]
 	int RequiredKeyId = -1;
+	[SerializeField]
+	int RequiredKeyBId = -1;
 	[SerializeField]
 	string VignetteToPlay;
 	[SerializeField]
@@ -18,6 +21,10 @@ public class InteractionSensor : MonoBehaviour {
 	bool m_CanOnlyBeTriggeredOnce = true;
 	[SerializeField]
 	Collider OptionalRequiredLookPoint;
+	[SerializeField]
+	bool m_AutoTriggerWhenWithin = false;
+	[SerializeField]
+	NarrationTrigger m_NarationToTriggerIfDontHavekeys;
 
 	private int m_TriggeredTimes = 0;
 
@@ -33,19 +40,35 @@ public class InteractionSensor : MonoBehaviour {
 	void Update(){
 		GameManager.Instance.InteractionSensorReport(this);
 
-		if(PlayerWithin() && GameManager.Instance.ActivationKeyPressed()){
-			Trigger();
+		if(PlayerWithin() && (GameManager.Instance.ActivationKeyPressed() || m_AutoTriggerWhenWithin)){
+			if(HasRequiredKeys()){
+				Trigger();
+			}
+			else if(m_NarationToTriggerIfDontHavekeys!=null && m_NarationToTriggerIfDontHavekeys.enabled)
+			{
+				m_NarationToTriggerIfDontHavekeys.Trigger();
+			}
 		}
+	}
+
+	public bool CanDisplayUITrigger(){
+		return !m_AutoTriggerWhenWithin && HasRequiredKeys();
+	}
+
+	private bool HasRequiredKeys(){
+		if(RequiredKeyId>0 && !GameManager.Instance.HasKey(RequiredKeyId)){
+			return false;
+		}
+		if(RequiredKeyBId>0 && !GameManager.Instance.HasKey(RequiredKeyBId)){
+			return false;
+		}
+		return true;
 	}
 
 	public bool CanTrigger(){
 		if(m_TriggeredTimes > 0 && m_CanOnlyBeTriggeredOnce){
 			return false;
 		}
-		if(RequiredKeyId>0 && !GameManager.Instance.HasKey(RequiredKeyId)){
-			return false;
-		}
-
 		return true;
 	}
 
@@ -102,6 +125,10 @@ public class InteractionSensor : MonoBehaviour {
 			GameManager.Instance.DisplayVignette(VignetteToPlay, JumpToLevel);
 		}else{
 			JumpToLevel();
+		}
+
+		if(m_CanOnlyBeTriggeredOnce){
+			Destroy(gameObject);
 		}
 	}
 

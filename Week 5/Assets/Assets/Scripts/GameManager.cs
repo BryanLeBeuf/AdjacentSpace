@@ -87,7 +87,8 @@ public class GameManager : GameSingleton<GameManager> {
 	void Update(){
 		ProcessMenus();
 
-		bool showOverlay = PlayerWithinInteractionSensor() != null;
+		InteractionSensor sensor = PlayerWithinInteractionSensor();
+		bool showOverlay = (sensor!= null && sensor.CanDisplayUITrigger());
 		if(showOverlay!=ShowingInteractionMenu()){
 			ShowInteractionMenu(showOverlay);
 		}
