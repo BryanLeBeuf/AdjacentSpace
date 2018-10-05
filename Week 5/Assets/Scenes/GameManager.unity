@@ -5423,7 +5423,7 @@ MonoBehaviour:
   InteractionMenu: {fileID: 1200846009}
   VideoPlayerOverlay: {fileID: 612060321}
   m_BlurAmountWhenPaused: 0.8
-  m_SubtitleManagerAlphaWhenPaused: 0.3
+  m_SubtitleManagerAlphaWhenPaused: 0.18
   VignettesConfig:
   - Name: Intro
     MapImage: {fileID: 2800000, guid: a940494d68f8d4711aea054c076b1e1c, type: 3}
