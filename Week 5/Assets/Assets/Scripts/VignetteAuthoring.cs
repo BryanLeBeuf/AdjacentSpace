@@ -49,6 +49,7 @@ public struct VignetteVideoConfig {
 	public Vector2 BackgroundImageOffset;
 	public Color BackgroundColor;
 	public Sprite Background;
+	public float BackgroundScale;
 	public bool PlayAudioSource;
 	public AudioSource AudioSourceToPlay;
 	public bool FadeIn;	
@@ -82,5 +83,6 @@ public struct VignetteVideoStepExtraConfig {
 	public Vector2 BackgroundImageOffset;
 	public Color BackgroundColor;
 	public Sprite Background;
+	public float BackgroundScale;
 	public VignetteScriptable ScriptToRun;
 }

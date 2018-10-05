@@ -75,6 +75,11 @@ public class VignetteOverlay : MonoBehaviour {
 		RectTransform bgRectTransform = ((RectTransform)m_Background.transform);
 		bgRectTransform.anchoredPosition = m_Config.BackgroundImageOffset;
 
+		if(m_Config.BackgroundScale == 0){
+			m_Config.BackgroundScale = 1;
+		}
+		bgRectTransform.localScale = Vector3.one * m_Config.BackgroundScale;
+
 		m_Text.font = m_Config.Font;
 		m_Text.fontSize = m_Config.FontSize;
 		m_Text.lineSpacing = m_Config.LineSpacing;
@@ -117,6 +122,11 @@ public class VignetteOverlay : MonoBehaviour {
 				m_BackgroundColor.color = config.Extras[0].BackgroundColor;
 				RectTransform bgRectTransform = ((RectTransform)m_Background.transform);
 				bgRectTransform.anchoredPosition = config.Extras[0].BackgroundImageOffset;
+
+				if(config.Extras[0].BackgroundScale == 0){
+					config.Extras[0].BackgroundScale = 1;
+				}
+				bgRectTransform.localScale = Vector3.one * config.Extras[0].BackgroundScale;
 			}
 
 			m_CurrentScriptable = config.Extras[0].ScriptToRun;
