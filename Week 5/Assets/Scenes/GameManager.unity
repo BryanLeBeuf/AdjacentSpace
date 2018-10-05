@@ -2913,7 +2913,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 306.923, y: -101}
+  m_AnchoredPosition: {x: 306.92383, y: -101}
   m_SizeDelta: {x: 699.5, y: 118.9}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &626963102
@@ -4257,6 +4257,329 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!1 &1091602983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1091602984}
+  - component: {fileID: 1091602986}
+  - component: {fileID: 1091602985}
+  m_Layer: 0
+  m_Name: Video Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1091602984
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091602983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -76.862885, y: -208.31781, z: 28.802765}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1093809289}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091602985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091602983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319a47b1485f04c10adddb9ff5dc5de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VideoPlayer: {fileID: 1091602986}
+--- !u!328 &1091602986
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091602983}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 2e450f106727f4ae6b9cbbf14cc66e21, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 1404430880}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 1
+  m_AspectRatio: 5
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+--- !u!1 &1093809288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1093809289}
+  - component: {fileID: 1093809291}
+  - component: {fileID: 1093809290}
+  m_Layer: 0
+  m_Name: Ivanhoe_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1093809289
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1093809288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1091602984}
+  m_Father: {fileID: 1453203713}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1093809290
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1093809288}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 57e7a82b7c6734b799aeda8202249e16, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.45
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &1093809291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1093809288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97609d812cadb45308b01f040de40e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Configuration:
+    UniqueId: 
+    DisplayName: The New Dance Show
+    IndividualSteps:
+    - Text: The New Dance Show was a series that ran on public TV in Detroit. Local
+        electronic music was the center of the show, showcasing DJs and dancers from
+        the community. It was something my sister and I shared with my parents. It
+        was our first exposure to house music...
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 21300000, guid: b5eed6ef97d124d76a746eb29dcdd9a7, type: 3}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    - Text: 'It was actually the first time in our lives we experienced music that
+        was different from what we heard on the radio.  '
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 0}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    - Text: '[DANCE SHOW VIDEO]'
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 1
+        MusicVolume: 0.45
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 0}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    - Text: 'At that time music was something I experienced through the guidance of
+        my mother, and my other father. Despite all of the complications of the time,
+        their love, and musical taste would inevitable guide us, paving a path to
+        something that eventually would be our own.  '
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 21300000, guid: 1d3136fcfe6774e96a6da51297917bd8, type: 3}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    TextOffset: {x: 409, y: -843}
+    TextBoxWidth: 1337
+    TextSpeed: 0
+    Font: {fileID: 12800000, guid: 7a65a1f210482489fb0cdb87fe9191ba, type: 3}
+    FontSize: 32
+    LineSpacing: 1.65
+    BackgroundImageOffset: {x: 0, y: 0}
+    BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+    Background: {fileID: 0}
+    BackgroundScale: 0
+    PlayAudioSource: 0
+    AudioSourceToPlay: {fileID: 0}
+    FadeIn: 1
+    FadeInColor: {r: 0, g: 0, b: 0, a: 1}
+    FadeInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.1842165
+        value: 0
+        inSlope: -0.21119264
+        outSlope: -0.21119264
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    FadeOut: 1
+    FadeOutColor: {r: 0, g: 0, b: 0, a: 1}
+    FadeOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.2411066
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    ClearTextOnFadeOut: 0
+    HideAdvanceIndicator: 1
+    InitialMusicVolume: 0
 --- !u!1 &1168467438
 GameObject:
   m_ObjectHideFlags: 0
@@ -5716,7 +6039,7 @@ Transform:
   - {fileID: 336656749}
   - {fileID: 905353271}
   - {fileID: 396642378}
-  - {fileID: 1460345541}
+  - {fileID: 1093809289}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5731,211 +6054,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23db80a46bcf64205a61bd716ad17ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1460345540
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1460345541}
-  - component: {fileID: 1460345543}
-  - component: {fileID: 1460345542}
-  m_Layer: 0
-  m_Name: Ivanhoe_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1460345541
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1460345540}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1453203713}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1460345542
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1460345540}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 57e7a82b7c6734b799aeda8202249e16, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.45
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 1
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
---- !u!114 &1460345543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1460345540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97609d812cadb45308b01f040de40e8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Configuration:
-    UniqueId: 
-    DisplayName: Ivanhoe 2
-    IndividualSteps:
-    - Text: 'Wow. '
-      DelayInSecsBeforeTextShows: 0
-      TextFadeInSecs: 0
-      TextFadeOutSecs: 0
-      Extras: []
-    - Text: 
-      DelayInSecsBeforeTextShows: 0
-      TextFadeInSecs: 0
-      TextFadeOutSecs: 0
-      Extras:
-      - AdjustMusicVolume: 0
-        MusicVolume: 0
-        AdjustTextSpeed: 0
-        TextSpeed: 0
-        ChangeBackground: 0
-        BackgroundImageOffset: {x: 0, y: 0}
-        BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
-        Background: {fileID: 0}
-        BackgroundScale: 0
-        ScriptToRun: {fileID: 781512101}
-    - Text: Bye.
-      DelayInSecsBeforeTextShows: 0
-      TextFadeInSecs: 0
-      TextFadeOutSecs: 0
-      Extras: []
-    TextOffset: {x: 666.4, y: -502}
-    TextBoxWidth: 1267
-    TextSpeed: 12
-    Font: {fileID: 12800000, guid: 7a65a1f210482489fb0cdb87fe9191ba, type: 3}
-    FontSize: 50
-    LineSpacing: 1.5
-    BackgroundImageOffset: {x: 0, y: 0}
-    BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
-    Background: {fileID: 21300000, guid: a10bd924da6c444cfa59ad0533b4c927, type: 3}
-    BackgroundScale: 0
-    PlayAudioSource: 1
-    AudioSourceToPlay: {fileID: 1460345542}
-    FadeIn: 1
-    FadeInColor: {r: 0, g: 0, b: 0, a: 1}
-    FadeInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1.6226177
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 0
-    FadeOut: 1
-    FadeOutColor: {r: 0, g: 0, b: 0, a: 1}
-    FadeOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1.2411066
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 0
-    ClearTextOnFadeOut: 0
-    HideAdvanceIndicator: 0
-    InitialMusicVolume: 0
 --- !u!1 &1496546156
 GameObject:
   m_ObjectHideFlags: 0
