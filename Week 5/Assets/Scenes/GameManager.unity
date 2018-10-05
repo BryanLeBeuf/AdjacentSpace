@@ -159,7 +159,7 @@ Prefab:
     - target: {fileID: 224131686464275882, guid: 4d65ec0282bc441aaa64b969c40e5af9,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224131686464275882, guid: 4d65ec0282bc441aaa64b969c40e5af9,
         type: 2}
@@ -259,7 +259,7 @@ Prefab:
     - target: {fileID: 114668097867466274, guid: 4d65ec0282bc441aaa64b969c40e5af9,
         type: 2}
       propertyPath: m_Text
-      value: Skip to Ivanhoe
+      value: 'Skip to: Ivanhoe'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d65ec0282bc441aaa64b969c40e5af9, type: 2}
@@ -1729,7 +1729,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1887794152}
   m_Father: {fileID: 1453203713}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1828,20 +1829,90 @@ MonoBehaviour:
     UniqueId: 
     DisplayName: Ivanhoe 1
     IndividualSteps:
-    - Text: 
+    - Text: 'At the end of our block, there was a corner store that sold used video
+        games. The used games sat adjacent to the register, behind thick bulletproof
+        glass. Every day I would visit in hopes of there being a new game brought
+        in secondhand... '
       DelayInSecsBeforeTextShows: 0
       TextFadeInSecs: 1.6
-      TextFadeOutSecs: 0
+      TextFadeOutSecs: 1.2
       Extras:
       - AdjustMusicVolume: 0
         MusicVolume: 0
         AdjustTextSpeed: 0
         TextSpeed: 0
         ChangeBackground: 1
-        BackgroundImageOffset: {x: 0, y: 200}
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 21300000, guid: 89da36dd611784025b7a34a178e02fc8, type: 3}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    - Text: 
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 0
+      TextFadeOutSecs: 0
+      Extras:
+      - AdjustMusicVolume: 1
+        MusicVolume: 0.15
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: 0, y: 0}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 0}
+        BackgroundScale: 0
+        ScriptToRun: {fileID: 1887794153}
+    - Text: "One day, I stopped by the store to buy something, I don\u2019t even remember
+        what... I noticed a new video game tucked in amongst the lighters and candy
+        packages behind the thick glass. "
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 0
+      TextFadeOutSecs: 0.6
+      Extras:
+      - AdjustMusicVolume: 1
+        MusicVolume: 0.45
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 21300000, guid: bb87a234f7e5b4c35b130b8d8050751b, type: 3}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    - Text: 'It was different than what they usually had: sports and fighting games.
+        It had a werewolf on the front and it looked like an adventure. It was Altered
+        Beast.'
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 0.8
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 21300000, guid: bb87a234f7e5b4c35b130b8d8050751b, type: 3}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    - Text: I wanted it so bad. I immediately asked the clerk about it. For many months,
+        I had restrained my desires to ask my mom for anything new, let alone a video
+        game. How could I ask for something like a toy when we could barely make ends
+        meet?
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
         Background: {fileID: 21300000, guid: 55e4ad08c055d41a88b8c8a08fb56d37, type: 3}
-        BackgroundScale: 0.45
+        BackgroundScale: 0.507
         ScriptToRun: {fileID: 0}
     TextOffset: {x: 409, y: -843}
     TextBoxWidth: 1337
@@ -1943,7 +2014,7 @@ Prefab:
     - target: {fileID: 224131686464275882, guid: 4d65ec0282bc441aaa64b969c40e5af9,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224131686464275882, guid: 4d65ec0282bc441aaa64b969c40e5af9,
         type: 2}
@@ -3578,7 +3649,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1089451550}
   m_HandleRect: {fileID: 1089451548}
   m_Direction: 2
-  m_Value: 0.9999987
+  m_Value: 0.99999934
   m_Size: 0.89525515
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4148,10 +4219,10 @@ RectTransform:
   - {fileID: 365921200}
   - {fileID: 452085188}
   - {fileID: 1718335375}
+  - {fileID: 2112352}
   - {fileID: 416770335}
   - {fileID: 1928528239}
   - {fileID: 1942744683}
-  - {fileID: 2112352}
   - {fileID: 363691516}
   - {fileID: 808073510}
   m_Father: {fileID: 2064786730}
@@ -7006,6 +7077,81 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &1887794151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1887794152}
+  - component: {fileID: 1887794154}
+  - component: {fileID: 1887794153}
+  m_Layer: 0
+  m_Name: Video Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1887794152
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1887794151}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -76.862885, y: -208.31781, z: 28.802765}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 396642378}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1887794153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1887794151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319a47b1485f04c10adddb9ff5dc5de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VideoPlayer: {fileID: 1887794154}
+--- !u!328 &1887794154
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1887794151}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 2e450f106727f4ae6b9cbbf14cc66e21, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 1404430880}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 1
+  m_AspectRatio: 5
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!1001 &1914261547
 Prefab:
   m_ObjectHideFlags: 0
@@ -7175,7 +7321,7 @@ Prefab:
     - target: {fileID: 224131686464275882, guid: 4d65ec0282bc441aaa64b969c40e5af9,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224131686464275882, guid: 4d65ec0282bc441aaa64b969c40e5af9,
         type: 2}
@@ -7454,7 +7600,7 @@ Prefab:
     - target: {fileID: 224131686464275882, guid: 4d65ec0282bc441aaa64b969c40e5af9,
         type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224131686464275882, guid: 4d65ec0282bc441aaa64b969c40e5af9,
         type: 2}
