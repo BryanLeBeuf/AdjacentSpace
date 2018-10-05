@@ -5132,7 +5132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Configuration:
     UniqueId: 
-    DisplayName: Intro
+    DisplayName: Hello
     IndividualSteps:
     - Text: Hi!!!
       DelayInSecsBeforeTextShows: 2.4
