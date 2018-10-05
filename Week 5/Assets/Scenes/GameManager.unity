@@ -1827,7 +1827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Configuration:
     UniqueId: 
-    DisplayName: Secondhand Games
+    DisplayName: Used Games
     IndividualSteps:
     - Text: 'At the end of our block, there was a corner store that sold used video
         games. The used games sat adjacent to the register, behind thick bulletproof
