@@ -20,6 +20,9 @@ public class MemoriesMenu : MonoBehaviour {
 	[SerializeField]
 	GameObject SystemMenu;
 
+	[SerializeField]
+	GameObject ConfirmQuitMenu;
+
 	private VignetteSelection m_PreviouslySelected;
 
 	private List<VignetteSelection> m_Vignettes = new List<VignetteSelection>();
@@ -27,6 +30,7 @@ public class MemoriesMenu : MonoBehaviour {
 	void Start(){
 		MenuRoot.SetActive(true);
 		SystemMenu.SetActive(false);
+		ConfirmQuitMenu.SetActive(false);
 
 		Utilities.DeleteAllChildren(VignetteSelectionContainer);
 
@@ -47,14 +51,26 @@ public class MemoriesMenu : MonoBehaviour {
 		UpdateVignettes();
 	}
 
+	public void CloseConfirmQuitMenu(){
+		OpenSystemMenu();
+	}
+
+	public void OpenConfirmQuitMenu(){
+		MenuRoot.SetActive(false);
+		SystemMenu.SetActive(false);
+		ConfirmQuitMenu.SetActive(true);
+	}
+
 	public void OpenSystemMenu(){
 		MenuRoot.SetActive(false);
 		SystemMenu.SetActive(true);
+		ConfirmQuitMenu.SetActive(false);
 	}
 
 	public void CloseSystemMenu(){
 		MenuRoot.SetActive(true);
 		SystemMenu.SetActive(false);
+		ConfirmQuitMenu.SetActive(false);
 	}
 
 	public void ClickedResumeGame(){
