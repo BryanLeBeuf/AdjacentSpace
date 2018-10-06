@@ -1743,7 +1743,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 57e7a82b7c6734b799aeda8202249e16, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c0a95a0de8986423794ca4bb61d1719f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.45
   m_Pitch: 1
@@ -1837,8 +1837,8 @@ MonoBehaviour:
       TextFadeInSecs: 1.6
       TextFadeOutSecs: 1.2
       Extras:
-      - AdjustMusicVolume: 0
-        MusicVolume: 0
+      - AdjustMusicVolume: 1
+        MusicVolume: 0.45
         AdjustTextSpeed: 0
         TextSpeed: 0
         ChangeBackground: 1
@@ -1853,7 +1853,7 @@ MonoBehaviour:
       TextFadeOutSecs: 0
       Extras:
       - AdjustMusicVolume: 1
-        MusicVolume: 0.15
+        MusicVolume: 0
         AdjustTextSpeed: 0
         TextSpeed: 0
         ChangeBackground: 1
@@ -1904,8 +1904,8 @@ MonoBehaviour:
       TextFadeInSecs: 1.6
       TextFadeOutSecs: 1.2
       Extras:
-      - AdjustMusicVolume: 0
-        MusicVolume: 0
+      - AdjustMusicVolume: 1
+        MusicVolume: 0.15
         AdjustTextSpeed: 0
         TextSpeed: 0
         ChangeBackground: 1
@@ -1924,8 +1924,8 @@ MonoBehaviour:
     BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
     Background: {fileID: 0}
     BackgroundScale: 0
-    PlayAudioSource: 0
-    AudioSourceToPlay: {fileID: 0}
+    PlayAudioSource: 1
+    AudioSourceToPlay: {fileID: 396642379}
     FadeIn: 1
     FadeInColor: {r: 0, g: 0, b: 0, a: 1}
     FadeInCurve:
@@ -4447,7 +4447,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 57e7a82b7c6734b799aeda8202249e16, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c0a95a0de8986423794ca4bb61d1719f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.45
   m_Pitch: 1
@@ -4610,8 +4610,8 @@ MonoBehaviour:
     BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
     Background: {fileID: 0}
     BackgroundScale: 0
-    PlayAudioSource: 0
-    AudioSourceToPlay: {fileID: 0}
+    PlayAudioSource: 1
+    AudioSourceToPlay: {fileID: 1093809290}
     FadeIn: 1
     FadeInColor: {r: 0, g: 0, b: 0, a: 1}
     FadeInCurve:
