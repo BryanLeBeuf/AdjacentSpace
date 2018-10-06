@@ -14,10 +14,10 @@ public class GameManager : GameSingleton<GameManager> {
 	[SerializeField]
 	bool CheatsMenuEnabled = true;
 
-	private HashSet<string> m_ViewedVignetts = new HashSet<string>();
+	private SaveData m_SaveData = new SaveData();
+
 	private Dictionary<string, VignetteConfig> m_Vignettes = new Dictionary<string, VignetteConfig>();
 	private List<string> m_VignetteIds = new List<string>();
-	private HashSet<int> m_ObtainedKeys = new HashSet<int>();
 
 	private Dictionary<InteractionSensor, bool> m_InteractionSensorReporting = new Dictionary<InteractionSensor, bool>();
 
@@ -108,12 +108,22 @@ public class GameManager : GameSingleton<GameManager> {
 		}
 	}
 
+	public void PlayerClickedResumeGameFromMenu(){
+		ShowGameMainMenu(GameplayScene && m_CurrentMenu == null);
+	}
+
+	public void PlayerClickedReturnToMainMenu(){
+		m_SaveData = new SaveData();
+		Application.LoadLevel("TitleScreen");
+		ShowGameMainMenu(GameplayScene && m_CurrentMenu == null);
+	}
+
 	public void GivePlayerKey(int keyId){
-		m_ObtainedKeys.Add(keyId);
+		m_SaveData.m_ObtainedKeys.Add(keyId);
 	}
 
 	public bool HasKey(int keyId){
-		return m_ObtainedKeys.Contains(keyId);
+		return m_SaveData.m_ObtainedKeys.Contains(keyId);
 	}
 
 	public void DisplayVignette(string name, VignetteOverlay.FinishedAction finishedAction = null){
@@ -127,11 +137,11 @@ public class GameManager : GameSingleton<GameManager> {
 	}
 
 	public void SetVignetteFound(string name){
-		m_ViewedVignetts.Add(name);
+		m_SaveData.m_ViewedVignetts.Add(name);
 	}
 
 	public bool HasSeenVignette(string name){
-		return m_ViewedVignetts.Contains(name);
+		return m_SaveData.m_ViewedVignetts.Contains(name);
 	}
 
 	public void HideVignette(){
@@ -288,4 +298,9 @@ public struct VignetteConfig
 public struct AudioClipConfig
 {
 	public AudioClip AudioClip;
+}
+
+public class SaveData {
+	public HashSet<string> m_ViewedVignetts = new HashSet<string>();
+	public HashSet<int> m_ObtainedKeys = new HashSet<int>();
 }
