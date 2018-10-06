@@ -29,6 +29,8 @@ public class GameManager : GameSingleton<GameManager> {
 	public string DefaultMapConfig = null;
 	[HideInInspector]
 	public bool FastRun = false;
+	[SerializeField]
+	public VignetteScriptableVideoPlayer AttractModeVideo;
 
 
 	HashSet<Camera> m_ActiveCameras = new HashSet<Camera>();

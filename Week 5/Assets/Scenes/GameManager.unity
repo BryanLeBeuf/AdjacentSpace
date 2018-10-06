@@ -2628,6 +2628,81 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 463531559}
+--- !u!1 &548888621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 548888622}
+  - component: {fileID: 548888624}
+  - component: {fileID: 548888623}
+  m_Layer: 0
+  m_Name: AttractModeVideo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &548888622
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548888621}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 106.8397, y: 4.7534447, z: -19.072966}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1404430881}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &548888623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548888621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319a47b1485f04c10adddb9ff5dc5de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VideoPlayer: {fileID: 548888624}
+--- !u!328 &548888624
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548888621}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 9e12537d60de4461095f30bd4deab74b, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 1404430880}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 1
+  m_AspectRatio: 5
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!1 &550978781
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,7 +2887,7 @@ RectTransform:
   - {fileID: 1496546157}
   - {fileID: 1236114114}
   m_Father: {fileID: 1404430881}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4693,7 +4768,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1404430881}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1174853758
 Camera:
@@ -5717,6 +5792,7 @@ Transform:
   m_LocalPosition: {x: -1.1776776, y: 0.6573677, z: 0.7203884}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 548888622}
   - {fileID: 612060322}
   - {fileID: 1982017561}
   - {fileID: 1174853757}
@@ -5739,6 +5815,7 @@ MonoBehaviour:
   GameplayScene: 0
   DefaultMapConfig: 
   FastRun: 0
+  AttractModeVideo: {fileID: 548888623}
   MainMenu: {fileID: 1756464962}
   CheatMenu: {fileID: 1216956380}
   VignetteOverlay: {fileID: 1416332957}
@@ -7768,7 +7845,7 @@ RectTransform:
   - {fileID: 1416332956}
   - {fileID: 1216956379}
   m_Father: {fileID: 1404430881}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
