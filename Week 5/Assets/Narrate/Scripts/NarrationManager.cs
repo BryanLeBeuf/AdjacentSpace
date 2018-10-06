@@ -338,5 +338,9 @@ namespace Narrate {
         void OnDisable() {
             StopAllCoroutines();
         }
+
+        public void Clear(){
+            subManager.Stop();
+        }
     }
 }

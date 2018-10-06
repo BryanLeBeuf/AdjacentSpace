@@ -302,5 +302,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
+        public void OnDestroy(){
+            m_MouseLook.SetCursorLock(false);
+        }
     }
 }

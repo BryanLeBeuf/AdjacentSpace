@@ -114,7 +114,8 @@ public class GameManager : GameSingleton<GameManager> {
 
 	public void PlayerClickedReturnToMainMenu(){
 		m_SaveData = new SaveData();
-		Application.LoadLevel("TitleScreen");
+		Application.LoadLevel("TitleScreen");	
+		NarrationManager.instance.Clear();
 		ShowGameMainMenu(GameplayScene && m_CurrentMenu == null);
 	}
 
