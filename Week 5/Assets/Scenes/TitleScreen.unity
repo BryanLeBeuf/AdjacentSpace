@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf2fb3593354475f8822a6ee32160ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SecondsBeforePlaying: 30
+  SecondsBeforePlaying: 120
   m_AudioToPause: {fileID: 1597826283}
 --- !u!4 &727323022
 Transform:
