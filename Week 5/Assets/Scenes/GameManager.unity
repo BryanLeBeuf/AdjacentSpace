@@ -2403,7 +2403,7 @@ MonoBehaviour:
       TextFadeInSecs: 1.6
       TextFadeOutSecs: 1.2
       Extras:
-      - AdjustMusicVolume: 1
+      - AdjustMusicVolume: 0
         MusicVolume: 0.15
         AdjustTextSpeed: 0
         TextSpeed: 0
@@ -5602,7 +5602,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1091602983}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 2e450f106727f4ae6b9cbbf14cc66e21, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 49bc6bdad1cd640749540eeb21841f5e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1404430880}
@@ -5779,40 +5779,40 @@ MonoBehaviour:
       TextFadeOutSecs: 1.2
       Extras:
       - AdjustMusicVolume: 0
-        MusicVolume: 0
-        AdjustTextSpeed: 0
-        TextSpeed: 0
-        ChangeBackground: 1
-        BackgroundImageOffset: {x: -19, y: 174}
-        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
-        Background: {fileID: 0}
-        BackgroundScale: 0.507
-        ScriptToRun: {fileID: 0}
-    - Text: '[DANCE SHOW VIDEO]'
-      DelayInSecsBeforeTextShows: 0
-      TextFadeInSecs: 1.6
-      TextFadeOutSecs: 1.2
-      Extras:
-      - AdjustMusicVolume: 1
         MusicVolume: 0.45
         AdjustTextSpeed: 0
         TextSpeed: 0
         ChangeBackground: 1
         BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
-        Background: {fileID: 0}
+        Background: {fileID: 21300000, guid: 892fbcdf4a14b49d3830fa5aa112ac9b, type: 3}
         BackgroundScale: 0.507
         ScriptToRun: {fileID: 0}
+    - Text: 
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 1
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 0}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 1091602985}
     - Text: 'At that time music was something I experienced through the guidance of
         my mother, and my other father. Despite all of the complications of the time,
         their love, and musical taste would inevitable guide us, paving a path to
         something that eventually would be our own.  '
       DelayInSecsBeforeTextShows: 0
-      TextFadeInSecs: 1.6
+      TextFadeInSecs: 0.8
       TextFadeOutSecs: 1.2
       Extras:
-      - AdjustMusicVolume: 0
-        MusicVolume: 0
+      - AdjustMusicVolume: 1
+        MusicVolume: 0.45
         AdjustTextSpeed: 0
         TextSpeed: 0
         ChangeBackground: 1
