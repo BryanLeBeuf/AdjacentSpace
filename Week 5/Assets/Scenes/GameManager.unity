@@ -728,6 +728,7 @@ MonoBehaviour:
         MusicVolume: 0
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 0
         BackgroundImageOffset: {x: 0, y: 0}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
@@ -1575,6 +1576,7 @@ MonoBehaviour:
         MusicVolume: 0.45
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 1
         BackgroundImageOffset: {x: 0, y: 0}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1590,6 +1592,7 @@ MonoBehaviour:
         MusicVolume: 0.15
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 0
         BackgroundImageOffset: {x: 0, y: 0}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
@@ -1607,6 +1610,7 @@ MonoBehaviour:
         MusicVolume: 0.45
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 1
         BackgroundImageOffset: {x: 0, y: 0}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2340,6 +2344,7 @@ MonoBehaviour:
         MusicVolume: 0.45
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 1
         BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2355,6 +2360,7 @@ MonoBehaviour:
         MusicVolume: 0
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 1
         BackgroundImageOffset: {x: 0, y: 0}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2372,6 +2378,7 @@ MonoBehaviour:
         MusicVolume: 0.45
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 1
         BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2389,6 +2396,7 @@ MonoBehaviour:
         MusicVolume: 0
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 1
         BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2407,6 +2415,7 @@ MonoBehaviour:
         MusicVolume: 0.15
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 1
         BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -4784,6 +4793,7 @@ MonoBehaviour:
         MusicVolume: 0
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 0
         BackgroundImageOffset: {x: 0, y: 0}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
@@ -5766,6 +5776,7 @@ MonoBehaviour:
         MusicVolume: 0
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 20}
         ChangeBackground: 1
         BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -5782,6 +5793,7 @@ MonoBehaviour:
         MusicVolume: 0.45
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 1
         BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -5797,6 +5809,7 @@ MonoBehaviour:
         MusicVolume: 0
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 1
         BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -5815,6 +5828,7 @@ MonoBehaviour:
         MusicVolume: 0.45
         AdjustTextSpeed: 0
         TextSpeed: 0
+        TextOffset: {x: 0, y: 20}
         ChangeBackground: 1
         BackgroundImageOffset: {x: -19, y: 174}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -5926,7 +5940,7 @@ Prefab:
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 277.97498
+      value: 265.47498
       objectReference: {fileID: 0}
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
@@ -5936,7 +5950,7 @@ Prefab:
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 555.94995
+      value: 530.94995
       objectReference: {fileID: 0}
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
@@ -6993,6 +7007,7 @@ MonoBehaviour:
         MusicVolume: 0
         AdjustTextSpeed: 1
         TextSpeed: 6
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 0
         BackgroundImageOffset: {x: 0, y: 0}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
@@ -7008,6 +7023,7 @@ MonoBehaviour:
         MusicVolume: 0
         AdjustTextSpeed: 1
         TextSpeed: 12
+        TextOffset: {x: 0, y: 0}
         ChangeBackground: 0
         BackgroundImageOffset: {x: 0, y: 0}
         BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
@@ -8647,7 +8663,7 @@ Prefab:
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1233.9249
+      value: 1196.4249
       objectReference: {fileID: 0}
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
@@ -8657,7 +8673,7 @@ Prefab:
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 555.94995
+      value: 530.94995
       objectReference: {fileID: 0}
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}

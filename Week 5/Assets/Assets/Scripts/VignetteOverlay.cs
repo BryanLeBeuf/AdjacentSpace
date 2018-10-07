@@ -129,9 +129,15 @@ public class VignetteOverlay : MonoBehaviour {
 				bgRectTransform.localScale = Vector3.one * config.Extras[0].BackgroundScale;
 			}
 
+			RectTransform rectTransform = ((RectTransform)m_Text.transform);
+			rectTransform.anchoredPosition = m_Config.TextOffset + config.Extras[0].TextOffset;
+
 			m_CurrentScriptable = config.Extras[0].ScriptToRun;
 		}else{
 			m_CurrentScriptable = null;
+			
+			RectTransform rectTransform = ((RectTransform)m_Text.transform);
+			rectTransform.anchoredPosition = m_Config.TextOffset;
 		}
 
 		if(m_CurrentScriptable!=null){

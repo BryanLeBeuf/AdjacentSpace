@@ -79,6 +79,7 @@ public struct VignetteVideoStepExtraConfig {
 	public float MusicVolume;
 	public bool AdjustTextSpeed;
 	public float TextSpeed;
+	public Vector2 TextOffset;
 	public bool ChangeBackground;
 	public Vector2 BackgroundImageOffset;
 	public Color BackgroundColor;
