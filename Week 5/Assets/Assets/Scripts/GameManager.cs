@@ -32,6 +32,9 @@ public class GameManager : GameSingleton<GameManager> {
 	[SerializeField]
 	public VignetteScriptableVideoPlayer AttractModeVideo;
 
+	[SerializeField]
+	float SecondsTillBootBackToTitleScreen = 60 * 4;
+	private float m_SecondsSinceInput;
 
 	HashSet<Camera> m_ActiveCameras = new HashSet<Camera>();
 	HashSet<Menu> m_AllSubMenus = new HashSet<Menu>();
@@ -94,6 +97,8 @@ public class GameManager : GameSingleton<GameManager> {
 		if(showOverlay!=ShowingInteractionMenu()){
 			ShowInteractionMenu(showOverlay);
 		}
+
+		ProcessAutoReturnToTitleScreen();
 	}
 
 	void ProcessMenus(){
@@ -108,14 +113,35 @@ public class GameManager : GameSingleton<GameManager> {
 		}
 	}
 
+	void ProcessAutoReturnToTitleScreen(){
+		// reset if input pressed or video playing.
+		if(AnyInputPressed() || VideoPlayerOverlay.activeSelf){
+			m_SecondsSinceInput = 0;
+			return;
+		}else if (m_SecondsSinceInput < SecondsTillBootBackToTitleScreen){
+			m_SecondsSinceInput += Time.deltaTime;
+		}
+
+		if(m_SecondsSinceInput >= SecondsTillBootBackToTitleScreen){
+			bool onTitleScreen = TitleScreenManager.HasInstance;
+			if(!onTitleScreen || IsVignettePlaying()){
+				PlayerClickedReturnToMainMenu();
+				HideVignette();
+				m_SecondsSinceInput = 0;
+			}
+		}
+	}
+
 	public void PlayerClickedResumeGameFromMenu(){
 		ShowGameMainMenu(GameplayScene && m_CurrentMenu == null);
 	}
 
 	public void PlayerClickedReturnToMainMenu(){
 		m_SaveData = new SaveData();
-		Application.LoadLevel("TitleScreen");	
-		ShowGameMainMenu(GameplayScene && m_CurrentMenu == null);
+		Application.LoadLevel("TitleScreen");
+		if(m_CurrentMenu != null){
+			ShowGameMainMenu(GameplayScene && m_CurrentMenu == null);
+		}
 		if(NarrationManager.instance != null){
 			NarrationManager.instance.Clear();
 		}
@@ -279,6 +305,10 @@ public class GameManager : GameSingleton<GameManager> {
 		return Input.GetKeyDown(KeyCode.Return)
 			|| Input.GetKeyDown(KeyCode.Space)
 			|| Input.GetMouseButtonDown(0);
+	}
+
+	public bool AnyInputPressed(){
+		return Input.anyKey || !Mathf.Approximately(Input.GetAxis("Mouse X"), 0) || !Mathf.Approximately(Input.GetAxis("Mouse Y"), 0);
 	}
 
 	public void QuitGame(){

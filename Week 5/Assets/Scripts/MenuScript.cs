@@ -13,6 +13,7 @@ public class MenuScript : MonoBehaviour
     public GameObject TitleText;
     public Button StartText;
     public Button ExitText;
+    public GameObject LoadingHider;
 
     // Use this for initialization
     void Start()
@@ -53,6 +54,7 @@ public class MenuScript : MonoBehaviour
     public void StartLevel()
     {
         GameManager.Instance.DisplayVignette("Intro", WhenFinished);
+        LoadingHider.SetActive(true);
     }
 
     public void WhenFinished(){

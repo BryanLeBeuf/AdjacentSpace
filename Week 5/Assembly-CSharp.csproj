@@ -62,6 +62,7 @@
      <Compile Include="Assets\Assets\Scripts\MemoriesMenu.cs" />
      <Compile Include="Assets\Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Assets\Scripts\ParticlesFadeAsPlayerGetsClose.cs" />
+     <Compile Include="Assets\Assets\Scripts\TitleScreenManager.cs" />
      <Compile Include="Assets\Assets\Scripts\Utilities.cs" />
      <Compile Include="Assets\Assets\Scripts\VignetteAuthoring.cs" />
      <Compile Include="Assets\Assets\Scripts\VignetteConfiguration.cs" />

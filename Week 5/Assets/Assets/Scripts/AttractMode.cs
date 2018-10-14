@@ -15,10 +15,15 @@ public class AttractMode : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		// wait for game manager to load
+		if(!GameManager.HasInstance){
+			return;
+		}
+
 		if(m_VideoStarted){
 			m_TimeElapsed = 0;
 
-			if(AnyInputPressed()){
+			if(GameManager.Instance.AnyInputPressed()){
 				EndAttractMode();
 			}
 			if(GameManager.Instance.AttractModeVideo.ScriptableFinished()){
@@ -28,7 +33,8 @@ public class AttractMode : MonoBehaviour {
 			}
 		}
 
-		if(AnyInputPressed()){
+		if(GameManager.Instance.AnyInputPressed()
+			|| GameManager.Instance.IsVignettePlaying()){
 			m_TimeElapsed = 0;
 		}
 
@@ -44,10 +50,6 @@ public class AttractMode : MonoBehaviour {
 		m_TimeElapsed = 0;
 		m_VideoStarted = true;
 		m_AudioToPause.Pause();
-	}
-
-	private bool AnyInputPressed(){
-		return Input.anyKey || !Mathf.Approximately(Input.GetAxis("Mouse X"), 0) || !Mathf.Approximately(Input.GetAxis("Mouse Y"), 0);
 	}
 
 	private void EndAttractMode(){

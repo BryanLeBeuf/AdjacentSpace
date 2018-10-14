@@ -7196,6 +7196,7 @@ MonoBehaviour:
   DefaultMapConfig: 
   FastRun: 0
   AttractModeVideo: {fileID: 548888623}
+  SecondsTillBootBackToTitleScreen: 270
   MainMenu: {fileID: 1756464962}
   CheatMenu: {fileID: 1216956380}
   VignetteOverlay: {fileID: 1416332957}
