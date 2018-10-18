@@ -52,4 +52,9 @@ public class CheatsMenu : MonoBehaviour {
 		Application.LoadLevel("Ply_test");
 		GameManager.Instance.SetCheatsMenuActive(false);
 	}
+
+	public void SkipToHouse(){	
+		Application.LoadLevel("LevelThree");
+		GameManager.Instance.SetCheatsMenuActive(false);
+	}
 }

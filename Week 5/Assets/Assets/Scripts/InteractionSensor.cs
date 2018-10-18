@@ -25,6 +25,8 @@ public class InteractionSensor : MonoBehaviour {
 	bool m_AutoTriggerWhenWithin = false;
 	[SerializeField]
 	NarrationTrigger m_NarationToTriggerIfDontHavekeys;
+	[SerializeField]
+	bool m_TriggerOnStart = false;
 
 	private int m_TriggeredTimes = 0;
 
@@ -39,6 +41,11 @@ public class InteractionSensor : MonoBehaviour {
 
 	void Update(){
 		GameManager.Instance.InteractionSensorReport(this);
+
+		if(CanTrigger() && m_TriggerOnStart){
+			Trigger();
+			return;
+		}
 
 		if(PlayerWithin() && (GameManager.Instance.ActivationKeyPressed() || m_AutoTriggerWhenWithin)){
 			if(HasRequiredKeys()){
