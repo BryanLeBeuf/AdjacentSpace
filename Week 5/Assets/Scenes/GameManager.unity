@@ -940,6 +940,78 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224131686464275882, guid: 4d65ec0282bc441aaa64b969c40e5af9,
     type: 2}
   m_PrefabInternal: {fileID: 178214304}
+--- !u!1 &215492005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1514511425111660, guid: 38a574d00f2c9495e9683c22a9dda876,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 215492006}
+  - component: {fileID: 215492008}
+  - component: {fileID: 215492007}
+  m_Layer: 0
+  m_Name: GrandAndEuclid_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &215492006
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224062133425712300, guid: 38a574d00f2c9495e9683c22a9dda876,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215492005}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99999255, y: 0.99999255, z: 1.0000038}
+  m_Children: []
+  m_Father: {fileID: 221807595}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -128, y: -182}
+  m_SizeDelta: {x: 70, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &215492007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114252279123605808, guid: 38a574d00f2c9495e9683c22a9dda876,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215492005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.397}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &215492008
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222183745525519704, guid: 38a574d00f2c9495e9683c22a9dda876,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215492005}
 --- !u!1 &220138684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1165,7 @@ RectTransform:
   - {fileID: 774143430}
   - {fileID: 712530795}
   - {fileID: 874853100}
+  - {fileID: 215492006}
   m_Father: {fileID: 589745622}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2830,7 +2903,7 @@ Prefab:
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 159.99997
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
@@ -3833,6 +3906,81 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 626963100}
+--- !u!1 &634339767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 634339768}
+  - component: {fileID: 634339770}
+  - component: {fileID: 634339769}
+  m_Layer: 0
+  m_Name: Video Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &634339768
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634339767}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -76.862885, y: -208.31781, z: 28.802765}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 948921816}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &634339769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634339767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319a47b1485f04c10adddb9ff5dc5de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VideoPlayer: {fileID: 634339770}
+--- !u!328 &634339770
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634339767}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 48911a61434204ce7b4b95f0069e2bb8, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 1404430880}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 1
+  m_AspectRatio: 5
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!1 &643078634
 GameObject:
   m_ObjectHideFlags: 0
@@ -5213,8 +5361,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1089451550}
   m_HandleRect: {fileID: 1089451548}
   m_Direction: 2
-  m_Value: 0.99999934
-  m_Size: 0.89525515
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5276,6 +5424,275 @@ RectTransform:
   m_AnchoredPosition: {x: -1919, y: 525.30005}
   m_SizeDelta: {x: -2102.0015, y: 1038}
   m_Pivot: {x: 1, y: 1}
+--- !u!1 &948921815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 948921816}
+  - component: {fileID: 948921818}
+  - component: {fileID: 948921817}
+  m_Layer: 0
+  m_Name: GrandAndEuclid_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &948921816
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 948921815}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 634339768}
+  m_Father: {fileID: 1453203713}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &948921817
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 948921815}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c0a95a0de8986423794ca4bb61d1719f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.45
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &948921818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 948921815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97609d812cadb45308b01f040de40e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Configuration:
+    UniqueId: 
+    DisplayName: Boston-Edison
+    IndividualSteps:
+    - Text: We used to pass by here on our bus rides to school. It looks just like
+        it used to...
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 1
+        MusicVolume: 0.45
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 21300000, guid: 8bb97406f8c584b61808d567e67f815a, type: 3}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    - Text: "My bus would pick me up on the West Side, and we would slowly zig-zag
+        east towards Dow Elementary School. I don\u2019t remember talking much to
+        anyone on my way to school, but I remember being fascinated by the how the
+        scenery changed from block to block. "
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        TextOffset: {x: 0, y: 20}
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 21300000, guid: 70f33fc60b77d4d20a14609f63069db9, type: 3}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    - Text: 'During the ride, we passed through a neighborhood called Boston-Edison.
+        From the manicured hedges to the stone masonry the neighborhood was nothing
+        like anything else I knew. Each house seemed like a castle... '
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 21300000, guid: 1ebda2b54061a4f46b37d6bbdc1ad57d, type: 3}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    - Text: 
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 1.6
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 0}
+        BackgroundScale: 1
+        ScriptToRun: {fileID: 634339769}
+    - Text: 'Even then, I noticed the disparity between my neighborhood, and the ones
+        I passed by everyday. Eventually we would get to school, and I would completely
+        forgot about the ride, and Boston-Edison.  '
+      DelayInSecsBeforeTextShows: 0
+      TextFadeInSecs: 0.8
+      TextFadeOutSecs: 1.2
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0.15
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: -19, y: 174}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 21300000, guid: 4940ebe78c1a14ddd8ceed4c62b55a87, type: 3}
+        BackgroundScale: 0.507
+        ScriptToRun: {fileID: 0}
+    TextOffset: {x: 409, y: -843}
+    TextBoxWidth: 1337
+    TextSpeed: 0
+    Font: {fileID: 12800000, guid: 7a65a1f210482489fb0cdb87fe9191ba, type: 3}
+    FontSize: 32
+    LineSpacing: 1.65
+    BackgroundImageOffset: {x: 0, y: 0}
+    BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+    Background: {fileID: 0}
+    BackgroundScale: 0
+    PlayAudioSource: 1
+    AudioSourceToPlay: {fileID: 948921817}
+    FadeIn: 1
+    FadeInColor: {r: 0, g: 0, b: 0, a: 1}
+    FadeInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.1842165
+        value: 0
+        inSlope: -0.21119264
+        outSlope: -0.21119264
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    FadeOut: 1
+    FadeOutColor: {r: 0, g: 0, b: 0, a: 1}
+    FadeOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.2411066
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    ClearTextOnFadeOut: 0
+    HideAdvanceIndicator: 1
+    InitialMusicVolume: 0
 --- !u!114 &971847270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6173,7 +6590,7 @@ Prefab:
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -72.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
@@ -6665,7 +7082,7 @@ Prefab:
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 159.99997
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
@@ -7515,6 +7932,9 @@ MonoBehaviour:
   - Name: Devil's Night
     MapImage: {fileID: 2800000, guid: a940494d68f8d4711aea054c076b1e1c, type: 3}
     HideInList: 0
+  - Name: GrandAndEuclid_2
+    MapImage: {fileID: 2800000, guid: a940494d68f8d4711aea054c076b1e1c, type: 3}
+    HideInList: 0
   - Name: Lost Moments
     MapImage: {fileID: 2800000, guid: a940494d68f8d4711aea054c076b1e1c, type: 3}
     HideInList: 0
@@ -7806,6 +8226,7 @@ Transform:
   - {fileID: 396642378}
   - {fileID: 1093809289}
   - {fileID: 2129448651}
+  - {fileID: 948921816}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8299,7 +8720,7 @@ Prefab:
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 159.99997
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
@@ -8774,7 +9195,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -781.18884, y: 431.21802}
-  m_SizeDelta: {x: 350, y: 800}
+  m_SizeDelta: {x: 350, y: 920}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1750528392
 MonoBehaviour:
@@ -8977,7 +9398,7 @@ Prefab:
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -72.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
@@ -9291,7 +9712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00013724278}
+  m_AnchoredPosition: {x: 0, y: 0.00006856572}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1877919325
@@ -9523,7 +9944,7 @@ Prefab:
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 159.99997
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
@@ -9876,7 +10297,7 @@ Prefab:
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 159.99997
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
@@ -10427,7 +10848,7 @@ Prefab:
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 159.99997
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 224789712562684004, guid: a3f498857687540688456d6f248d4329,
         type: 2}
