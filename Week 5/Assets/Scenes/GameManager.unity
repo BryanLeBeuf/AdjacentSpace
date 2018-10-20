@@ -5361,7 +5361,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1089451550}
   m_HandleRect: {fileID: 1089451548}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5606,8 +5606,8 @@ MonoBehaviour:
         ScriptToRun: {fileID: 0}
     - Text: 
       DelayInSecsBeforeTextShows: 0
-      TextFadeInSecs: 1.6
-      TextFadeOutSecs: 1.2
+      TextFadeInSecs: 0
+      TextFadeOutSecs: 0
       Extras:
       - AdjustMusicVolume: 0
         MusicVolume: 0
@@ -6447,8 +6447,8 @@ MonoBehaviour:
         ScriptToRun: {fileID: 0}
     - Text: 
       DelayInSecsBeforeTextShows: 0
-      TextFadeInSecs: 1.6
-      TextFadeOutSecs: 1.2
+      TextFadeInSecs: 0
+      TextFadeOutSecs: 0
       Extras:
       - AdjustMusicVolume: 1
         MusicVolume: 0
@@ -9712,7 +9712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00006856572}
+  m_AnchoredPosition: {x: 0, y: 0.00009261492}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1877919325

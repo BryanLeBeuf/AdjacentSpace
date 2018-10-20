@@ -209,6 +209,9 @@ public class VignetteOverlay : MonoBehaviour {
 		if(m_CurrentScriptable!=null){
 			if(m_CurrentScriptable.ScriptableFinished()){
 				m_CurrentScriptable.ScriptableWrapUp();
+				if(m_TextFadeOutSecsTotal > 0){
+					Debug.LogWarning("Wrapping up a vignette scriptable, but m_TextFadeOutSecsTotal > 0. (" + m_Config.UniqueId + ").");
+				}
 				TryAdvance();
 			}
 			return;
