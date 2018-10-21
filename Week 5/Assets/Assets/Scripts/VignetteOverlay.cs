@@ -11,7 +11,7 @@ public class VignetteOverlay : MonoBehaviour {
 
 	private const string kInivisibleColorStart = "<color=#00000000>";
 	private const string kInivisibleColorEnd = "</color>";
-	private const float kAudioVolumeAdjust = .006f;
+	private const float kAudioVolumeAdjust = .011f;
 
 	[SerializeField]
 	Text m_Text;
@@ -21,6 +21,8 @@ public class VignetteOverlay : MonoBehaviour {
 	Image m_Background;
 	[SerializeField]
 	Image m_FadeOverlay;
+	[SerializeField]
+	CanvasGroup m_VignetteBackgroundCanvasGroup;
 
 	[SerializeField]
 	CanvasGroup m_ReadyToAdvanceAnimation;
@@ -49,6 +51,8 @@ public class VignetteOverlay : MonoBehaviour {
 
 	private bool m_Finished = true;
 	private bool m_FiredFinishingAction = false;
+
+	private VignetteScriptableVideoPlayer m_BackgroundVideo;
 
 	private Color m_TextColor = Color.white;
 
@@ -94,6 +98,11 @@ public class VignetteOverlay : MonoBehaviour {
 		rectTransform.sizeDelta = new Vector2(m_Config.TextBoxWidth, rectTransform.sizeDelta.y);
 
 		m_ReadyToAdvanceAnimation.alpha = config.HideAdvanceIndicator ? 0 : 1;
+
+		m_BackgroundVideo = config.m_BackgroundVideo;
+		if(m_BackgroundVideo != null){
+			m_BackgroundVideo.StartScriptable();
+		}
 
 		StartFade(m_Config.FadeIn, m_Config.FadeInCurve, m_Config.FadeInColor);
 		DisplayStep(currentIndex);
@@ -152,6 +161,9 @@ public class VignetteOverlay : MonoBehaviour {
 			m_TextColor.a = 1;
 			m_Text.color = m_TextColor;
 		}
+		
+
+		UpdateBackgroundForVideo();
 	}
 
 	void Update(){
@@ -253,6 +265,14 @@ public class VignetteOverlay : MonoBehaviour {
 
 		// doing it like this prevents text from jumping to the next line as its typed out.
 		m_Text.text = textVisible + kInivisibleColorStart + textInvisible + kInivisibleColorEnd;
+	}
+
+	private void UpdateBackgroundForVideo(){
+		if(GameManager.Instance.IsVideoPlaying()){
+			m_VignetteBackgroundCanvasGroup.alpha = 0;
+		}else{
+			m_VignetteBackgroundCanvasGroup.alpha = 1;
+		}
 	}
 
 	private bool CanGoBackward(){
@@ -455,6 +475,11 @@ public class VignetteOverlay : MonoBehaviour {
 			text = string.Empty;
 			m_Text.text = text;
 		}
+
+		if(m_BackgroundVideo != null){
+			m_BackgroundVideo.ScriptableWrapUp();
+		}
+
 		StartFade(m_Config.FadeOut, m_Config.FadeOutCurve, m_Config.FadeOutColor);
 	}
 

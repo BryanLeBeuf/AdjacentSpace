@@ -62,6 +62,7 @@ public struct VignetteVideoConfig {
 	public bool HideAdvanceIndicator;
 	[HideInInspector]
 	public float InitialMusicVolume;
+	public VignetteScriptableVideoPlayer m_BackgroundVideo;
 }
 
 [Serializable]

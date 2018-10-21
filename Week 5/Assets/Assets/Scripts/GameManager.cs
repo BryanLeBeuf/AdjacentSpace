@@ -88,6 +88,10 @@ public class GameManager : GameSingleton<GameManager> {
 	public bool IsPaused(){
 		return m_CurrentMenu != null;
 	}
+	
+	public bool IsVideoPlaying(){
+		return VideoPlayerOverlay.activeSelf;
+	}
 
 	void Update(){
 		ProcessMenus();
@@ -113,6 +117,7 @@ public class GameManager : GameSingleton<GameManager> {
 		}
 	}
 
+
 	void ProcessAutoReturnToTitleScreen(){
 		// reset if input pressed or video playing.
 		if(AnyInputPressed() || VideoPlayerOverlay.activeSelf){
@@ -126,7 +131,6 @@ public class GameManager : GameSingleton<GameManager> {
 			bool onTitleScreen = TitleScreenManager.HasInstance;
 			if(!onTitleScreen || IsVignettePlaying()){
 				PlayerClickedReturnToMainMenu();
-				HideVignette();
 				m_SecondsSinceInput = 0;
 			}
 		}
@@ -145,6 +149,7 @@ public class GameManager : GameSingleton<GameManager> {
 		if(NarrationManager.instance != null){
 			NarrationManager.instance.Clear();
 		}
+		HideVignette();
 	}
 
 	public void GivePlayerKey(int keyId){

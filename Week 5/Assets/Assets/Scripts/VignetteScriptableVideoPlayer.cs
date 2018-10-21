@@ -7,6 +7,8 @@ public class VignetteScriptableVideoPlayer : VignetteScriptable {
 
 	[SerializeField]
 	VideoPlayer m_VideoPlayer;
+    [SerializeField]
+    public bool Loop = false;
 
     private bool m_Finished = false;
 
@@ -15,7 +17,11 @@ public class VignetteScriptableVideoPlayer : VignetteScriptable {
     }
 
     private void OnVideoFinishedPlaying(UnityEngine.Video.VideoPlayer vp){
-        m_Finished = true;
+        if(Loop){
+            m_VideoPlayer.Play();
+        }else{
+            m_Finished = true;
+        }
     }
 
     public override void StartScriptable(){

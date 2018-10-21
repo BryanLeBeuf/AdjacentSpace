@@ -57,4 +57,9 @@ public class CheatsMenu : MonoBehaviour {
 		Application.LoadLevel("LevelThree");
 		GameManager.Instance.SetCheatsMenuActive(false);
 	}
+
+	public void SkipToStreet(){	
+		Application.LoadLevel("Street_exit");
+		GameManager.Instance.SetCheatsMenuActive(false);
+	}
 }

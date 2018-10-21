@@ -68,6 +68,7 @@
      <Compile Include="Assets\Assets\Scripts\VignetteConfiguration.cs" />
      <Compile Include="Assets\Assets\Scripts\VignetteOverlay.cs" />
      <Compile Include="Assets\Assets\Scripts\VignetteScriptable.cs" />
+     <Compile Include="Assets\Assets\Scripts\VignetteScriptableBackToMainMenu.cs" />
      <Compile Include="Assets\Assets\Scripts\VignetteScriptableVideoPlayer.cs" />
      <Compile Include="Assets\Assets\Scripts\VignetteSelection.cs" />
      <Compile Include="Assets\Narrate\Demos\2DDemo\Scripts\Elevator.cs" />
