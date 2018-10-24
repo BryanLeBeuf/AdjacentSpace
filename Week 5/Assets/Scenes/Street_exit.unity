@@ -3727,7 +3727,7 @@ MonoBehaviour:
   VignetteToPlay: Street_exit
   KeyToGivePlayer: {fileID: 0}
   VideoToPlay: {fileID: 0}
-  m_OptionalLevelToJumpTo: 
+  m_OptionalLevelToJumpTo: Final_TBC
   m_CanOnlyBeTriggeredOnce: 1
   OptionalRequiredLookPoint: {fileID: 0}
   m_AutoTriggerWhenWithin: 1

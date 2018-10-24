@@ -29,3 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameManager.unity
     guid: 913ddb5d04b6d4626984590bbff77d92
+  - enabled: 1
+    path: Assets/Scenes/Street_exit.unity
+    guid: 1b4c3751d5c594b2898b053b72c71f1b
+  - enabled: 1
+    path: Assets/Scenes/Final_TBC.unity
+    guid: d4880263291484922b48e60ec334f4c0
