@@ -1275,8 +1275,19 @@ MonoBehaviour:
     - Text: 
       DelayInSecsBeforeTextShows: 0
       TextFadeInSecs: 0
-      TextFadeOutSecs: 0
-      Extras: []
+      TextFadeOutSecs: 1
+      Extras:
+      - AdjustMusicVolume: 0
+        MusicVolume: 0
+        AdjustTextSpeed: 0
+        TextSpeed: 0
+        TextOffset: {x: 0, y: 0}
+        ChangeBackground: 1
+        BackgroundImageOffset: {x: 0, y: 0}
+        BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+        Background: {fileID: 0}
+        BackgroundScale: 0
+        ScriptToRun: {fileID: 0}
     TextOffset: {x: 409, y: -843}
     TextBoxWidth: 1337
     TextSpeed: 0
@@ -1309,19 +1320,19 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
-    FadeOut: 0
-    FadeOutColor: {r: 0, g: 0, b: 0, a: 0}
+    FadeOut: 1
+    FadeOutColor: {r: 0, g: 0, b: 0, a: 1}
     FadeOutCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
       - serializedVersion: 2
-        time: 1.2411066
+        time: 0.099999994
         value: 1
         inSlope: 0
         outSlope: 0
@@ -5911,19 +5922,19 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
-    FadeOut: 0
+    FadeOut: 1
     FadeOutColor: {r: 0, g: 0, b: 0, a: 1}
     FadeOutCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
       - serializedVersion: 2
-        time: 1.2411066
+        time: 0.099999994
         value: 1
         inSlope: 0
         outSlope: 0
@@ -6065,7 +6076,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1089451550}
   m_HandleRect: {fileID: 1089451548}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7344,7 +7355,7 @@ Prefab:
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -72.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
@@ -10753,7 +10764,7 @@ Prefab:
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -72.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224614299714990832, guid: 3ec152134d0db479291ccb822c742d94,
         type: 2}
@@ -11067,7 +11078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00007851097}
+  m_AnchoredPosition: {x: 0, y: 0.00009552999}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1877919325
@@ -12081,7 +12092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2056413471
 RectTransform:
   m_ObjectHideFlags: 0
