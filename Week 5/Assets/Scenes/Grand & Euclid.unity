@@ -537,7 +537,7 @@ Transform:
   m_GameObject: {fileID: 77457226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 73.87229, y: -7.5, z: 15.24014}
-  m_LocalScale: {x: 50, y: 1, z: 50}
+  m_LocalScale: {x: 100, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 29639775}
   m_RootOrder: 17
@@ -602,8 +602,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 97869991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.26, z: -0}
-  m_LocalScale: {x: 1, y: 3.3, z: 1}
+  m_LocalPosition: {x: 0, y: 1.26, z: -0.22}
+  m_LocalScale: {x: 1, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 138466945}
   m_RootOrder: 1
@@ -729,7 +729,7 @@ MonoBehaviour:
       move: 0
     LoopAudioForDuration: 0
     expanded: 1
-    lastCalculatedHeight: 178
+    lastCalculatedHeight: 70
     useSmartSubs: 0
   OnFailure: 0
   OnSuccess: 0
@@ -796,7 +796,7 @@ MonoBehaviour:
       move: 0
     LoopAudioForDuration: 0
     expanded: 1
-    lastCalculatedHeight: 178
+    lastCalculatedHeight: 70
     useSmartSubs: 0
   OnFailure: 0
   OnSuccess: 0
@@ -1248,7 +1248,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &209227687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1651,9 +1651,9 @@ MonoBehaviour:
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: There used to be a little grocery store around the corner from here. Mom
-        worked there until she got laid off... It was next to Steve's Soul food. It
-        always smelled funny.
+      text: There used to be a little grocery store around here. Mom worked there
+        until she got laid off... It was next to Steve's Soul food, and always smelled
+        funny.
       duration: 8
       drawAudio: 1
       lastCalculatedHeight: 90
@@ -2218,7 +2218,7 @@ MonoBehaviour:
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: ' Why is it so important to piece together the memories now? And why here? '
+      text: ' Why is it so important to piece together this place? '
       duration: 5
       drawAudio: 1
       lastCalculatedHeight: 90
@@ -3027,7 +3027,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -837410213
+  randomSeed: 613967826
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -8215,7 +8215,7 @@ MonoBehaviour:
       move: 0
     LoopAudioForDuration: 0
     expanded: 1
-    lastCalculatedHeight: 178
+    lastCalculatedHeight: 70
     useSmartSubs: 0
   OnFailure: 0
   OnSuccess: 0
@@ -13362,7 +13362,7 @@ MonoBehaviour:
       move: 0
     LoopAudioForDuration: 0
     expanded: 1
-    lastCalculatedHeight: 70
+    lastCalculatedHeight: 178
     useSmartSubs: 0
   OnFailure: 0
   OnSuccess: 0
@@ -13421,9 +13421,8 @@ MonoBehaviour:
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: 'Sometimes in the summer, I would go to work with her and help her bag
-        groceries. I never liked being there, but I never said anything out of fear
-        of causing more stress in moms life. '
+      text: Sometimes in the summer, I would go to work with her and help her bag
+        groceries. I never liked being there, but I never said anything...
       duration: 8
       drawAudio: 1
       lastCalculatedHeight: 90
