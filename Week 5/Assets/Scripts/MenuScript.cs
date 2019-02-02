@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -55,6 +56,7 @@ public class MenuScript : MonoBehaviour
     {
         GameManager.Instance.DisplayVignette("Intro", WhenFinished);
         LoadingHider.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void WhenFinished(){
