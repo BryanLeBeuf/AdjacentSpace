@@ -39,8 +39,18 @@ public class VignetteScriptableVideoPlayer : VignetteScriptable {
         m_Finished = true;
     }
 
+    private IEnumerator HideVideoAfterOneFrameRoutine() {
+        yield return null;
+        yield return null;
+        GameManager.Instance.DisplayVideoPlayerOverlay(false);
+    }
+
+    private void HideVideoAfterOneFrame() {
+        StartCoroutine(HideVideoAfterOneFrameRoutine());
+    }
+
     public override void ScriptableWrapUp(){
         StopPlaying();
-        GameManager.Instance.DisplayVideoPlayerOverlay(false);
+        HideVideoAfterOneFrame();
     }
 }

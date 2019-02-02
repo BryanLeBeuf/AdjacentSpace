@@ -14,7 +14,6 @@ public class MenuScript : MonoBehaviour
     public GameObject TitleText;
     public Button StartText;
     public Button ExitText;
-    public GameObject LoadingHider;
 
     // Use this for initialization
     void Start()
@@ -55,13 +54,13 @@ public class MenuScript : MonoBehaviour
     public void StartLevel()
     {
         GameManager.Instance.DisplayVignette("Intro", WhenFinished);
-        LoadingHider.SetActive(true);
         EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void WhenFinished(){
+        GameManager.Instance.ForceOpenLoadingHider();
         SceneManager.UnloadScene(0);
-        Application.LoadLevel ("Grand & Euclid");
+        GameManager.Instance.LoadLevel("Grand & Euclid");
     }
 
     public void ExitGame()

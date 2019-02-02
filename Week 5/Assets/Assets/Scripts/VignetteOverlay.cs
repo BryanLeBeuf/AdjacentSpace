@@ -166,6 +166,16 @@ public class VignetteOverlay : MonoBehaviour {
 		UpdateBackgroundForVideo();
 	}
 
+	private IEnumerator HideVignetteAfterOneFrameRoutine() {
+		yield return null;
+		yield return null;
+		GameManager.Instance.HideVignette();
+	}
+
+	private void HideVignetteAfterOneFrame() {
+		StartCoroutine(HideVignetteAfterOneFrameRoutine());
+	}
+
 	void Update(){
 		m_TimeSinceStarted += Time.deltaTime;
 		m_FadeTime += Time.deltaTime;
@@ -201,7 +211,7 @@ public class VignetteOverlay : MonoBehaviour {
 						m_FinishedAction();
 					}
 					GameManager.Instance.SetVignetteFound(m_Config.UniqueId);
-					GameManager.Instance.HideVignette();
+					HideVignetteAfterOneFrame();
 					UnPauseAllPreviouslyPlayingAudioSources();
 				}
 			}

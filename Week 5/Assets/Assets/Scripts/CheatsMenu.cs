@@ -49,17 +49,17 @@ public class CheatsMenu : MonoBehaviour {
 	}
 
 	public void SkipToIvanhoe(){	
-		Application.LoadLevel("Ply_test");
+		GameManager.Instance.LoadLevel("Ply_test");
 		GameManager.Instance.SetCheatsMenuActive(false);
 	}
 
 	public void SkipToHouse(){	
-		Application.LoadLevel("LevelThree");
+		GameManager.Instance.LoadLevel("LevelThree");
 		GameManager.Instance.SetCheatsMenuActive(false);
 	}
 
 	public void SkipToStreet(){	
-		Application.LoadLevel("Street_exit");
+		GameManager.Instance.LoadLevel("Street_exit");
 		GameManager.Instance.SetCheatsMenuActive(false);
 	}
 }

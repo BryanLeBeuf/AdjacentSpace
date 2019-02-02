@@ -58,6 +58,7 @@
      <Compile Include="Assets\Assets\Scripts\GameManagerInitializer.cs" />
      <Compile Include="Assets\Assets\Scripts\GameSingleton.cs" />
      <Compile Include="Assets\Assets\Scripts\InteractionSensor.cs" />
+     <Compile Include="Assets\Assets\Scripts\LoadingDots.cs" />
      <Compile Include="Assets\Assets\Scripts\MemoriesMap.cs" />
      <Compile Include="Assets\Assets\Scripts\MemoriesMenu.cs" />
      <Compile Include="Assets\Assets\Scripts\Menu.cs" />

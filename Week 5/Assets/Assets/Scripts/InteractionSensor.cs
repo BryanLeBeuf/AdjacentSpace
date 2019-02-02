@@ -141,7 +141,7 @@ public class InteractionSensor : MonoBehaviour {
 
 	private void JumpToLevel(){
 		if(!string.IsNullOrEmpty(m_OptionalLevelToJumpTo)){
-        	Application.LoadLevel(m_OptionalLevelToJumpTo);
+        	GameManager.Instance.LoadLevel(m_OptionalLevelToJumpTo);
 		}
 	}
 }

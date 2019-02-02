@@ -54,6 +54,10 @@ public class GameManager : GameSingleton<GameManager> {
 	float m_BlurAmountWhenPaused = 1.85f;
 	[SerializeField]
 	float m_SubtitleManagerAlphaWhenPaused = 0.3f;
+
+	[SerializeField]
+	GameObject LoadingHider;
+
 	[SerializeField]
 	VignetteConfig[] VignettesConfig;
 
@@ -77,6 +81,32 @@ public class GameManager : GameSingleton<GameManager> {
 		}
 		VignetteOverlay.gameObject.SetActive(false);
 		VideoPlayerOverlay.SetActive(false);
+
+		LoadingHider.SetActive(false);
+	}
+
+	public void ForceOpenLoadingHider(){
+		LoadingHider.SetActive(true);
+	}
+
+	public delegate void LoadCompleted();
+	private IEnumerator WaitAndLoadLevel(float wait, string scene, LoadCompleted callback) {
+		if(wait>0){
+			yield return new WaitForSeconds(wait);
+		}
+		LoadingHider.SetActive(true);
+		// wait 3frames
+		yield return new WaitForSeconds(1.01f);
+		yield return null;
+		Application.LoadLevel(scene);
+		yield return new WaitForSeconds(.01f);
+		yield return null;
+		LoadingHider.SetActive(false);
+		callback();
+	}
+
+	public void LoadLevel(string level, float wait = 0){
+		StartCoroutine(WaitAndLoadLevel(wait, level, () => {}));
 	}
 
 
@@ -142,7 +172,7 @@ public class GameManager : GameSingleton<GameManager> {
 
 	public void PlayerClickedReturnToMainMenu(){
 		m_SaveData = new SaveData();
-		Application.LoadLevel("TitleScreen");
+		GameManager.Instance.LoadLevel("TitleScreen");
 		if(m_CurrentMenu != null){
 			ShowGameMainMenu(GameplayScene && m_CurrentMenu == null);
 		}

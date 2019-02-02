@@ -6,9 +6,9 @@ public class LoadLevelTwo : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Player"){
-
-            Application.LoadLevel("LevelTwo");
+        if (col.gameObject.tag == "Player")
+        {
+            GameManager.Instance.LoadLevel("LevelTwo");
         }
     }
 }
