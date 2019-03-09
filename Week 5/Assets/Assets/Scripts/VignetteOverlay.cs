@@ -182,6 +182,10 @@ public class VignetteOverlay : MonoBehaviour {
 		UpdateFadeAnimations();
 		UpdateMusicVolume();
 
+		if(GameManager.Instance.LoadingHiderIsVisible()){
+			m_PreviouslyPlayingAudioSources.Clear();
+		}
+
 		// update the ready to advance animation
 		bool showAdvanceIndicator = CanAdvance();
 		if(showAdvanceIndicator != m_ReadyToAdvanceAnimation.gameObject.activeSelf){

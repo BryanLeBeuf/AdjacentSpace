@@ -61,6 +61,8 @@ public class GameManager : GameSingleton<GameManager> {
 	[SerializeField]
 	VignetteConfig[] VignettesConfig;
 
+	private float m_AudioListenerVolume = 1.0f;
+
 	void Start () {
 		DontDestroyOnLoad(gameObject);
 
@@ -83,10 +85,16 @@ public class GameManager : GameSingleton<GameManager> {
 		VideoPlayerOverlay.SetActive(false);
 
 		LoadingHider.SetActive(false);
+
+		m_AudioListenerVolume = UnityEngine.AudioListener.volume;
 	}
 
 	public void ForceOpenLoadingHider(){
 		LoadingHider.SetActive(true);
+	}
+
+	public bool LoadingHiderIsVisible(){
+		return LoadingHider.activeSelf;
 	}
 
 	public delegate void LoadCompleted();
@@ -124,6 +132,7 @@ public class GameManager : GameSingleton<GameManager> {
 	}
 
 	void Update(){
+		ProcessLoadingAudio();
 		ProcessMenus();
 
 		InteractionSensor sensor = PlayerWithinInteractionSensor();
@@ -133,6 +142,10 @@ public class GameManager : GameSingleton<GameManager> {
 		}
 
 		ProcessAutoReturnToTitleScreen();
+	}
+
+	private void ProcessLoadingAudio(){
+		UnityEngine.AudioListener.volume = (float)(LoadingHiderIsVisible() ? 0 : m_AudioListenerVolume);
 	}
 
 	void ProcessMenus(){
