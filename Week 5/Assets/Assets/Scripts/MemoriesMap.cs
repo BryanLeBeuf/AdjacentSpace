@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MemoriesMap : MonoBehaviour {
@@ -51,6 +52,7 @@ public class MemoriesMap : MonoBehaviour {
 	public void ReplayVignette(){
 		if(m_CurrentVignetteId!=null){
 			GameManager.Instance.DisplayVignette(m_CurrentVignetteId);
+		EventSystem.current.SetSelectedGameObject(null);
 		}
 	}
 }
